@@ -1,0 +1,8 @@
+---
+# vars file for web-stg
+hostinfo:
+ - host: lt-2021-078-webserver1
+   name: webserver1
+
+ - host: lt-2021-078-webserver2
+   name: webserver2
