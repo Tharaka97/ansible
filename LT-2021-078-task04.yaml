@@ -1,0 +1,8 @@
+---
+- name: Configure web-stg with plugins
+  hosts: webservers
+
+  tasks:
+    - name: Configure web-stg using role
+      import_role:
+        name: web-stg
