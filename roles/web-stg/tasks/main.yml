@@ -42,20 +42,3 @@
    dest: /var/www/html
   notify: restart apache2
 
-
-- name: change the instances hostnames
-  become: true
-  become_user: root
-  shell: bash ./task02.sh
-  args:
-   executable: /bin/bash
-
-- name: check webserver1 hostname
-  shell: ansible 10.128.0.29 -a hostname
-  args:
-   executable: /bin/bash
-
-- name: check webserver2 hostname
-  shell: ansible 10.128.0.30 -a hostname
-  args:
-   executable: /bin/bash
